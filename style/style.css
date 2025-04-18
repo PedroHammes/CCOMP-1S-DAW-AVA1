@@ -75,3 +75,11 @@ p {
 #presentation {
     margin-top: 64px;
 }
+
+ul {
+    padding-left: 32px;
+}
+
+li {
+    line-height: 1.6;
+}
