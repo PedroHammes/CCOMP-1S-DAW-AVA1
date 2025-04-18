@@ -1,1 +1,1 @@
-Link do site: http://pedrohammesdev.com/
+Informações úteis
