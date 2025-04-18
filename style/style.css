@@ -83,3 +83,51 @@ ul {
 li {
     line-height: 1.6;
 }
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.project-card {
+    min-height: 100px;
+    background-color: #f6f6f6;
+    color: #272727;
+
+    padding: 8px;
+    border-radius: 10px 30px;
+}
+
+.project-card:hover {
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    transition: 0.8s;
+}
+
+button {
+    width: 100px;
+    background-color: #002bff;
+    border: 2px solid #002bff;
+    border-radius: 8px;
+    padding: 4px;
+
+    text-align: center;
+
+    a {
+        color: #f6f6f6;
+        text-decoration: none;
+    }
+}
+
+button:hover {
+    width: 110px;
+    background-color: #f6f6f6;
+    border: 2px solid #002bff;
+    a {
+        color: #002bff;
+        font-weight: 800;
+    }
+
+    transition: 0.8s;
+}
