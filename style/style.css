@@ -135,7 +135,7 @@ button:hover {
 
 table {
     margin: auto;
-    width: 300px;
+    width: 100%;
     background-color: var(--secondary-color);
 
     border-collapse: separate;
@@ -179,4 +179,37 @@ td {
 td:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+form {
+    margin: auto;
+    border: 2px solid var(--primary-color);
+    padding: 16px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+
+
+}
+
+.form-group {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+input {
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+textarea {
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
 }
