@@ -5,6 +5,7 @@
 
     --primary-color: #272727;
     --secondary-color: #f6f6f6;
+    --highlight-color: #002bff;
     font-family: "JetBrains Mono";
 }
 
@@ -107,8 +108,8 @@ li {
 
 button {
     width: 100px;
-    background-color: #002bff;
-    border: 2px solid #002bff;
+    background-color: var(--highlight-color);
+    border: 2px solid var(--highlight-color);
     border-radius: 8px;
     padding: 4px;
 
@@ -123,11 +124,59 @@ button {
 button:hover {
     width: 110px;
     background-color: #f6f6f6;
-    border: 2px solid #002bff;
+    border: 2px solid var(--highlight-color);
     a {
-        color: #002bff;
+        color: var(--highlight-color);
         font-weight: 800;
     }
 
     transition: 0.8s;
+}
+
+table {
+    margin: auto;
+    width: 300px;
+    background-color: var(--secondary-color);
+
+    border-collapse: separate;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+tr {
+    line-height: 1.6;
+}
+
+tr:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+
+    transition: 0.8s;
+}
+
+td {
+    border: 2px solid var(--secondary-color);
+}
+
+.table-contact {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.table-link {
+    border-radius: 0px 10px 10px 0px;
+}
+.table-link:hover {
+    border: 2px solid var(--highlight-color);
+    color: var(--highlight-color);
+    background-color: var(--secondary-color);
+    font-weight: 800;
+
+    transition: 0.8s;
+}
+
+td:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
