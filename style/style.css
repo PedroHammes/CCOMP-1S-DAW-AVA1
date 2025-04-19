@@ -112,9 +112,10 @@ button {
     padding: 4px;
 
     text-align: center;
+    color: var(--secondary-color);
 
     a {
-        color: #f6f6f6;
+        color: var(--secondary-color);
         text-decoration: none;
     }
 }
@@ -123,6 +124,8 @@ button:hover {
     width: 110px;
     background-color: #f6f6f6;
     border: 2px solid var(--highlight-color);
+    color: var(--highlight-color);
+    font-weight: 800;
     a {
         color: var(--highlight-color);
         font-weight: 800;
