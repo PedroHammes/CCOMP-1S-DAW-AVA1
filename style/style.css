@@ -81,6 +81,11 @@ ul {
 
 li {
     line-height: 1.6;
+    font-size: 16px;
+}
+
+li:hover{
+    color: var(--highlight-color);
 }
 
 #projects {
@@ -91,10 +96,12 @@ li {
 
 .project-card {
     min-height: 100px;
-    background-color: #f6f6f6;
-    color: #272727;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 
-    padding: 8px;
+    border: 2px solid var(--primary-color);
+
+    padding: 16px;
     border-radius: 10px 30px;
 }
 
